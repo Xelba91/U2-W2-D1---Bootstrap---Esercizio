@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Bootstrap</title>
+  </head>
+
+  <!-- Lo scopo di questa esercitazione pratica è quello di abituarti al funzionamento del grid system di Bootstrap.
+  Dovrai obbligatoriamente utilizzare le classi di Bootstrap.
+  
+  Per fare questo dovrai per prima cosa creare un file HTML nella directory da te designata a tale scopo. Poi eseguirai i compiti di seguito elencati:
+  
+  · Implementa Bootstrap nel tuo file index.html (scegli il metodo che più desideri).
+  . Crea un titolo h1 centrato con il testo "Pratica con il Grid System".
+  · Per ogni esercizio crea un titolo h2 centrato, esempio "Esercizio 1".
+
+   -->
+
+  <body>
+    <!-- <div class="container-fluid"> -->
+    <h1 class="text-center">Pratica con il Grid System</h1>
+    <!-- . Esercizio 1: Crea tre colonne con background blu e breakpoint medio, testo bianco e con padding 3, opzionale il bordo nero. -->
+    <h2 class="text-center">Esercizio 1</h2>
+    <div class="container-md Esercizio1">
+      <div class="row">
+        <div class="bg-primary col-md-4 text-white p-3 border border-black">Prima colonna</div>
+        <div class="bg-primary col-md-4 text-white p-3 border border-black">Seconda colonna</div>
+        <div class="bg-primary col-md-4 text-white p-3 border border-black">Terza colonna</div>
+      </div>
+    </div>
+    <br />
+    <!-- · Esercizio 2: Crea tre colonne con background giallo di uguale larghezza. Sui dispositivi mobili e tablet le colonne si impilano automaticamente. Su
+  schermi medi si disporranno orizzontalmente. Il testo dovrà essere nero e con padding 3, opzionale il bordo nero. -->
+    <div class="Esercizio2">
+      <h2 class="text-center">Esercizio 2</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="bg-warning col-12 col-md-4 text-black p-3 border border-black">Esercizio 2</div>
+          <div class="bg-warning col-12 col-md-4 text-black p-3 border border-black">Esercizio 2</div>
+          <div class="bg-warning col-12 col-md-4 text-black p-3 border border-black">Esercizio 2</div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- Esercizio 3: Crea tante griglie quanti sono i breakpoint disponibili, in ognuna di esse avrai 3 colonne all'interno, dapprima incolonnate, e
+  successivamente a scalare, una dopo l'altra, si disporranno in orizzontale. La prima griglia, che rappresenta il mobile, dovrà avere gli elementi in linea da
+  subito. Dalla seconda in poi, ogni griglia allineerà i propri elementi ad un breakpoint successivo rispetto la precedente. Il background sarà verde, testo
+  bianco e con padding 3, opzionale il bordo nero. -->
+    <div class="container Esercizio3">
+      <h2 class="text-center">Esercizio 3</h2>
+      <div class="row 1">
+        <div class="col-4 bg-success text-white p-3 border border-black">prima colonna</div>
+        <div class="col-4 bg-success text-white p-3 border border-black">seconda colonna</div>
+        <div class="col-4 bg-success text-white p-3 border border-black">terza colonna</div>
+      </div>
+      <div class="row 2">
+        <div class="col-sm-4 bg-success text-white p-3 border border-black">prima colonna</div>
+        <div class="col-sm-4 bg-success text-white p-3 border border-black">seconda colonna</div>
+        <div class="col-sm-4 bg-success text-white p-3 border border-black">terza colonna</div>
+      </div>
+      <div class="row 3">
+        <div class="col-md-4 bg-success text-white p-3 border border-black">prima colonna</div>
+        <div class="col-md-4 bg-success text-white p-3 border border-black">seconda colonna</div>
+        <div class="col-md-4 bg-success text-white p-3 border border-black">terza colonna</div>
+      </div>
+      <div class="row 4">
+        <div class="col-lg-4 bg-success text-white p-3 border border-black">prima colonna</div>
+        <div class="col-lg-4 bg-success text-white p-3 border border-black">seconda colonna</div>
+        <div class="col-lg-4 bg-success text-white p-3 border border-black">terza colonna</div>
+      </div>
+      <div class="row 5">
+        <div class="col-xl-4 bg-success text-white p-3 border border-black">prima colonna</div>
+        <div class="col-xl-4 bg-success text-white p-3 border border-black">seconda colonna</div>
+        <div class="col-xl-4 bg-success text-white p-3 border border-black">terza colonna</div>
+      </div>
+      <div class="row 6">
+        <div class="col-xxl-4 bg-success text-white p-3 border border-black">prima colonna</div>
+        <div class="col-xxl-4 bg-success text-white p-3 border border-black">seconda colonna</div>
+        <div class="col-xxl-4 bg-success text-white p-3 border border-black">terza colonna</div>
+      </div>
+    </div>
+    <br />
+    <!-- · Esercizio 4: Crea tre colonne per schermi desktop, con le due laterali uguali quella centrale diversa dalle
+      altre (ricorda che le colonne della griglia dovrebbero sommarsi fino a dodici per ogni singolo blocco
+      orizzontale). Background rosso, testo bianco e con padding 3, opzionale il bordo nero. -->
+    <div class="container-lg Esercizio4">
+      <h2 class="text-center">Esercizio 4</h2>
+      <div class="row">
+        <div class="col-lg-5 bg-danger text-white p-3 border border-black">prima colonna</div>
+        <div class="col-lg-2 bg-danger text-white p-3 border border-black">seconda colonna</div>
+        <div class="col-lg-5 bg-danger text-white p-3 border border-black">terza colonna</div>
+      </div>
+    </div>
+    <br />
+    <!-- · Esercizio 5: Crea due colonne di diversa misura, da desktop in poi, con all'interno della colonna più grande altre due colonne annidate (di uguale
+  larghezza). Per le dimensioni dei dispositivi mobili e tablet queste colonne e le loro colonne annidate si impileranno verticalmente. Background azzurro
+  per le colonne esterne e grigio per quelle annidate. Testo bianco e con padding 3, opzionale il bordo nero. -->
+    <div class="container Esercizio5">
+      <h2 class="text-center">Esercizio 5</h2>
+      <div class="row">
+        <div class="col-lg-8 bg-info text-white p-3 border border-black">
+          <div class="row">
+            <div class="col-lg-6 bg-secondary text-white p-3 border border-black">prima colonna interna</div>
+            <div class="col-lg-6 bg-secondary text-white p-3 border border-black">seconda colonna interna</div>
+          </div>
+        </div>
+        <div class="col-lg-4 bg-info text-white p-3 border border-black">Seconda colonna</div>
+      </div>
+    </div>
+    <br />
+    <!-- Esercizio 6: Crea due colonne per desktop. La seconda deve spostarsi di 2 posizioni. Background scuro, testo bianco e con padding 3. -->
+    <div class="container Esercizio6">
+      <h2 class="text-center">Esercizio 6</h2>
+      <div class="row">
+        <div class="col-lg-1 bg-black text-white p-3">Prima colonna</div>
+        <div class="col-lg-1 offset-lg-2 bg-black text-white p-3">Seconda colonna</div>
+      </div>
+    </div>
+    <br />
+    <!-- </div> -->
+    <!-- script bootstrap CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
